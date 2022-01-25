@@ -21,8 +21,9 @@ section{
     justify-content: space-between;
     align-items: center;
     background: #111;
-    /* background: url(images/mypics1); */
+    background: url(images/me.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: right center;
 }
 
@@ -300,7 +301,7 @@ header.sticky ul li a {
     background: #111;
 }
 .formBx{
-    min-width: 60%;
+    min-width: 50%;
 }
 
 .formBx form{
@@ -483,5 +484,89 @@ footer.copyright{
 
     header.sticky .toggle{
         filter:invert(1)
+    }
+    /* generall css */
+
+    section{
+        padding: 100px 30px;
+    }
+
+    .heading{
+        font-size: 20px;
+    }
+
+    /* banner */
+
+    .banner{
+        /* padding top 150, right 50px, 100px bottom */
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .textBx{
+        position: relative;
+        top: 170px;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+    /* about me */
+
+    .content{
+        flex-direction: column;
+    }
+    .contentBx{
+        padding: 0;
+    }
+
+    .content .w50 img{
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+    .contentBx h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .contentBx h3{
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 768px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+
+    .heading.bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+
+    .heading.bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
     }
 }
