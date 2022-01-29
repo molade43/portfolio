@@ -203,7 +203,7 @@ header.sticky ul li a {
 }
 
 .services .content .servicesBx:hover{
-    border-bottom: 2px solid #009e66;
+    border-bottom: 3px solid #009e66;
     cursor: pointer;
 }
 
